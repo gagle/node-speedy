@@ -1,0 +1,19 @@
+{
+	"name": "speedy",
+	"version": "0.0.1",
+	"description": "Tiny benchmark utility",
+	"keywords": ["benchmark", "speed", "compare"],
+	"author": {
+		"name": "Gabriel Llamas",
+		"email": "gagle@outlook.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Gagle/node-speedy.git"
+	},
+	"engines": {
+		"node": ">=0.10"
+	},
+	"license": "MIT",
+	"main": "lib"
+}
