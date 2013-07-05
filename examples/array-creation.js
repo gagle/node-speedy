@@ -21,8 +21,8 @@ Benchmarks: 2
 Amplifier: 100
 Time per test: 1000ms (1s 0ms)
 Runs per test: 3 (+1)
-Total time per test: 4000ms (4s 0ms)
-Total benchmark time: 8000ms (8s 0ms)
+Total time per test: ~4000ms (4s 0ms)
+Total benchmark time: ~8000ms (8s 0ms)
 
 Higher is better
 
