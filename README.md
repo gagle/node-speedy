@@ -126,7 +126,18 @@ speedy.run (function fn (){}, function (data){
 });
 ```
 
-Different ways to run the benchmark and its results:
+__Asynchronous benchmarking__
+
+Simply execute the callback when you are ready to iterate again.
+
+```javascript
+speedy.run (function (done){
+	//...
+	done ();
+});
+```
+
+__Ways to run the benchmark and its results__
 
 Anonymous function:
 
