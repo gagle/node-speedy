@@ -15,6 +15,8 @@ speedy.run ({
 });
 
 /*
+File: object-creation.js
+
 Node v0.10.12
 V8 v3.14.5.9
 
@@ -28,11 +30,11 @@ Total benchmark time: 12000ms (12s 0ms)
 Higher is better
 
 literal
-  142226.746
+  142634.785
 constructor
-  36544.587
+  36133.003
 create
-  8058.053
+  8014.257
 
 Benchmark finished
 */

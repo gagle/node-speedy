@@ -15,6 +15,8 @@ speedy.run ({
 });
 
 /*
+File: nexttick-vs-setimmediate-vs-setTimeout.js
+
 Node v0.10.12
 V8 v3.14.5.9
 
@@ -28,11 +30,11 @@ Total benchmark time: 12000ms (12s 0ms)
 Higher is better
 
 nextTick
-  201369.917
+  201025.083
 setImmediate
-  20937.195
+  21121.766
 setTimeout
-  3.224
+  3.217
 
 Benchmark finished
 */

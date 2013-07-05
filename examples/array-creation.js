@@ -12,6 +12,8 @@ speedy.run ({
 });
 
 /*
+File: array-creation.js
+
 Node v0.10.12
 V8 v3.14.5.9
 
@@ -25,9 +27,9 @@ Total benchmark time: 8000ms (8s 0ms)
 Higher is better
 
 literal
-  132774.455
+  132818.251
 constructor
-  79610.726
+  79530.627
 
 Benchmark finished
 */

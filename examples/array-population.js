@@ -38,6 +38,8 @@ The results vary depending on the array length
 
 
 
+File: array-population.js
+
 Node v0.10.12
 V8 v3.14.5.9
 
@@ -55,33 +57,33 @@ Higher is better
 n = 100
 
 push
-  79625.159
+  79512.508
 length
-  52866.271
+  52228.713
 index
-  53640.561
+  53012.772
 
 	
 
 n = 10000
 
 push
-  67890.990
+  67958.119
 length
-  69908.273
+  69943.762
 index
-  71660.495
+  71721.386
 
 	
 	
 n = 1000000
 
 push
-  22624.323
+  22585.974
 length
-  19070.792
+  19191.777
 index
-  19400.825
+  19035.248
 	
 	
 	
