@@ -86,6 +86,13 @@ Benchmark finished
 */
 ```
 
+#### Amplifier or timeout. Which one to use? ####
+
+The amplifier increases the result value without varying the time execution but the accuracy decreases with very high amplification factors.
+The timeout increases the result value but "can" become inconsistent with very high execution times and other cpu consuming programs running at the same time.
+
+In practice, because the time is a priority for rapid prototyping, the amplifier is more appropriate.
+
 #### Functions ####
 
 - [_module_.amplifier([n]) : undefined | Number](#amplifier)
@@ -211,10 +218,3 @@ Changes or returns the execution time per test. Higher values don't imply more e
 ```javascript
 speedy.timeout (100);
 ```
-
-#### Amplifier or timeout. Which one to use? ####
-
-The amplifier increases the result value without varying the time execution but the accuracy decreases with very high amplification factors.
-The timeout increases the result value but "can" become inconsistent with very high execution times and other cpu consuming programs running at the same time.
-
-In practice, because the time is a priority for rapid prototyping, the amplifier is more appropriate.
