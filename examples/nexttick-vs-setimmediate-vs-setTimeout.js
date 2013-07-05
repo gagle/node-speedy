@@ -3,13 +3,13 @@
 var speedy = require ("../lib");
 
 speedy.run ({
-	"nextTick": function (done){
+	nextTick: function (done){
 		process.nextTick (done);
 	},
-	"setImmediate": function (done){
+	setImmediate: function (done){
 		setImmediate (done);
 	},
-	"setTimeout": function (done){
+	setTimeout: function (done){
 		setTimeout (done, 0);
 	}
 });

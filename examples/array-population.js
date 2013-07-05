@@ -8,7 +8,7 @@ var a3 = [], i3 = 0;
 var n = 1000000;
 
 speedy.run ({
-	"push": function (){
+	push: function (){
 		if (i1 === n){
 			a1 = [];
 			i1 = 0;
@@ -16,7 +16,7 @@ speedy.run ({
 		i1++;
 		a1.push (1);
 	},
-	"length": function (){
+	length: function (){
 		if (i2 === n){
 			a2 = [];
 			i2 = 0;
@@ -24,7 +24,7 @@ speedy.run ({
 		i2++;
 		a2[a2.length] = 1;
 	},
-	"index": function (){
+	index: function (){
 		if (i3 === n){
 			a3 = [];
 			i3 = 0;

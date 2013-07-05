@@ -3,13 +3,13 @@
 var speedy = require ("../lib");
 
 speedy.run ({
-	"literal": function (){
+	literal: function (){
 		return {};
 	},
-	"constructor": function (){
+	constructor: function (){
 		return new Object ();
 	},
-	"create": function (){
+	create: function (){
 		return Object.create (Object.prototype);
 	}
 });
