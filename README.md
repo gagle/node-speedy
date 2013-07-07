@@ -35,7 +35,7 @@ async (function (){
 });
 ```
 
-This worked for me and produces consistent benchmark results. But it has a problem. Cannot execute codes that make an excessive use of nextTick in a recursive way because the `process.maxTickDepth` can be reached. In Node.js v0.12 this limit will be removed.
+This worked for me and produces consistent benchmark results. But it has a problem. Cannot execute codes that make an excessive use of nextTick in a recursive way because the `process.maxTickDepth` limit can be reached. In Node.js v0.12 this limit will be removed.
 
 #### Installation ####
 
