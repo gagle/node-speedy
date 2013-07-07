@@ -95,12 +95,12 @@ Elapsed time: 9151ms (9s 151ms)
 
 #### Descriptions ####
 
-<a name="amplifier"></a>
+<a name="multiplier"></a>
 ___module_.multiplier([n]) : undefined | Number__  
 Changes or returns the multiplier factor. The higher is this value the higher is the benchmark result. Default is 1.
 
 ```javascript
-speedy.amplifier (1.5);
+speedy.multiplier (1.5);
 ```
 
 ---
