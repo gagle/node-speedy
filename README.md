@@ -149,7 +149,7 @@ speedy.samples (10);
 
 <a name="timeout"></a>
 ___module_.timeout([n]) : undefined | Number__  
-Changes or returns the execution time in milliseconds per test. Higher values tend to imply more precise results. Default is 1000.
+Changes or returns the execution time per test, in milliseconds. Higher values tend to imply more precise results. Default is 1000.
 
 ```javascript
 speedy.timeout (2000);
