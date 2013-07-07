@@ -5,13 +5,13 @@ _Node.js project_
 
 #### Tiny benchmark utility ####
 
-Version: 0.0.3
+Version: 0.0.4
 
 Performs a benchmark of almost any test case.
 
-It's basically the Isaac Z. Schlueter's [node-bench](https://github.com/isaacs/node-bench) project revisited and rewritten from scratch.
+It's basically the Isaac Z. Schlueter's [node-bench](https://github.com/isaacs/node-bench) project revisited: rewritten from scratch and improved.
 
-If you need to benchmark some sort of code or if you are writting a module and want to see how well it performs in comparison with older versions, you can use `speedy`. It is intended for rapid prototyping and informal benchmarks, don't use it for serious benchmarkings.
+If you need to benchmark some sort of code or if you are writting a module and want to see how well it performs in comparison with older versions, you can use `speedy`. It is for rapid prototyping and informal benchmarks, don't use it for serious jobs.
 
 This module doesn't check for errors so make sure your code doesn't break before running the benchmark.
 
@@ -35,7 +35,7 @@ async (function (){
 });
 ```
 
-This worked for me and produces consistent benchmark results. But it has a problem. Cannot execute codes that make an excessive use of nextTick in a recursive way.
+This worked for me and produces consistent benchmark results. But it has a problem. Cannot execute codes that make an excessive use of nextTick in a recursive way because the `process.maxTickDepth` can be reached. In Node.js v0.12 this limit will be removed.
 
 #### Installation ####
 
@@ -65,51 +65,40 @@ File: object-creation.js
 
 Node v0.10.12
 V8 v3.14.5.9
+Speedy v0.0.4
 
 Benchmarks: 3
-Multiplier: 1
-Time per test: 1000ms (1s 0ms)
-Runs per test: 3
+Timeout: 1000ms (1s 0ms)
+Samples: 3
 Total time per test: ~3000ms (3s 0ms)
 Total benchmark time: ~9000ms (9s 0ms)
 
-Higher is better
+Higher is better (ops/sec)
 
 literal
-  143,489
+  143,887,810
 constructor
-  36,410
+  36,618,481
 create
-  8,024
+  8,014,581
 
-Elapsed time: 9151ms (9s 151ms)
+Elapsed time: 9173ms (9s 173ms)
 */
 ```
 
 #### Functions ####
 
-- [_module_.multiplier([n]) : undefined | Number](#multiplier)
 - [_module_.run([name][, fn][, callback]) : undefined](#run)
-- [_module_.runs([n]) : undefined | Number](#runs)
+- [_module_.samples([n]) : undefined | Number](#samples)
 - [_module_.timeout([n]) : undefined | Number](#timeout)
 
 #### Descriptions ####
-
-<a name="multiplier"></a>
-___module_.multiplier([n]) : undefined | Number__  
-Changes or returns the multiplier factor. The higher is this value the higher is the benchmark result. Default is 1.
-
-```javascript
-speedy.multiplier (1.5);
-```
-
----
 
 <a name="run"></a>
 ___module_.run([name][, fn][, callback]) : undefined__  
 Executes the benchmark. If a `callback` is passed the raw data will be returned as a parameter and nothing will be printed in the stdout.
 
-The returned value is an array, each index stores the result of each test; an object with a `raw` property storing an array with all the results and a `name` property storing the name of the test, if any. For example, a baseline benchmark with default attributes (multiplier 1, runs 3, timeout 1000):
+The returned value is an array, each index stores the result of each test; an object with a `raw` property storing an array with all the results and a `name` property storing the name of the test, if any. For example, a baseline benchmark with default attributes (samples 3, timeout 1000):
 
 ```javascript
 speedy.run (function fn (){}, function (data){
@@ -190,13 +179,13 @@ c
 
 ---
 
-<a name="runs"></a>
-___module_.runs([n]) : undefined | Number__  
-Changes or returns the number of runs per test. With more runs the final result will be more stable an exact. An arithmetic mean is applied to all of the results. Default is 3.
+<a name="samples"></a>
+___module_.samples([n]) : undefined | Number__  
+Changes or returns the number of samples per test. With more samples the final result will be more stable. An arithmetic mean is calculated with all the samples. Default is 3.
 
 
 ```javascript
-speedy.runs (10);
+speedy.samples (10);
 ```
 
 ---

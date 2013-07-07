@@ -1,8 +1,8 @@
 {
 	"name": "speedy",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Tiny benchmark utility",
-	"keywords": ["benchmark", "speed", "compare"],
+	"keywords": ["benchmark", "speed"],
 	"author": {
 		"name": "Gabriel Llamas",
 		"email": "gagle@outlook.com"

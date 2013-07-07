@@ -16,20 +16,20 @@ File: array-creation.js
 
 Node v0.10.12
 V8 v3.14.5.9
+Speedy v0.0.4
 
 Benchmarks: 2
-Multiplier: 1
-Time per test: 1000ms (1s 0ms)
-Runs per test: 3
+Timeout: 1000ms (1s 0ms)
+Samples: 3
 Total time per test: ~3000ms (3s 0ms)
 Total benchmark time: ~6000ms (6s 0ms)
 
-Higher is better
+Higher is better (ops/sec)
 
 literal
-  132,246
+  133,004,722
 constructor
-  79,633
+  79,416,933
 
-Elapsed time: 6102ms (6s 102ms)
+Elapsed time: 6131ms (6s 131ms)
 */
