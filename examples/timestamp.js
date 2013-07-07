@@ -1,18 +1,18 @@
 "use strict";
 
 var speedy = require ("../lib");
-
+speedy.timeout(2000)
 speedy.run ({
-	literal: function (){
-		return [];
+	now: function (){
+		Date.now ();
 	},
-	constructor: function (){
-		return new Array ();
+	getTime: function (){
+		new Date ().getTime ();
 	}
 });
 
 /*
-File: array-creation.js
+File: timestamp.js
 
 Node v0.10.12
 V8 v3.14.5.9
@@ -26,10 +26,10 @@ Total benchmark time: ~6000ms (6s 0ms)
 
 Higher is better
 
-literal
-  132,246
-constructor
-  79,633
+now
+  24,340
+getTime
+  10,154
 
-Elapsed time: 6102ms (6s 102ms)
+Elapsed time: 6101ms (6s 101ms)
 */

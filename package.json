@@ -1,6 +1,6 @@
 {
 	"name": "speedy",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Tiny benchmark utility",
 	"keywords": ["benchmark", "speed", "compare"],
 	"author": {

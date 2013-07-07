@@ -44,11 +44,11 @@ Node v0.10.12
 V8 v3.14.5.9
 
 Benchmarks: 3
-Amplifier: 100
+Multiplier: 1
 Time per test: 1000ms (1s 0ms)
-Runs per test: 3 (+1)
-Total time per test: ~4000ms (4s 0ms)
-Total benchmark time: ~12000ms (12s 0ms)
+Runs per test: 3
+Total time per test: ~3000ms (3s 0ms)
+Total benchmark time: ~9000ms (9s 0ms)
 
 Higher is better
 
@@ -57,35 +57,31 @@ Higher is better
 n = 100
 
 push
-  79512.508
+  79,059
 length
-  52228.713
+  53,893
 index
-  53012.772
+  54,570
 
 	
 
 n = 10000
 
 push
-  67958.119
+  68,002
 length
-  69943.762
+  70,922
 index
-  71721.386
+  72,941
 
 	
 	
 n = 1000000
 
 push
-  22585.974
+  22,330
 length
-  19191.777
+  18,952
 index
-  19035.248
-	
-	
-	
-Benchmark finished
+  19,192
 */
