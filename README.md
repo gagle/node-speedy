@@ -49,7 +49,7 @@ npm install speedy
 var speedy = require ("../lib");
 
 speedy.run ({
-  "literal": function (){
+	"literal": function (){
 		return {};
 	},
 	"constructor": function (){
