@@ -34,11 +34,10 @@ speedy.run ({
 });
 
 /*
-File: loop.js
 
 Node v0.10.12
 V8 v3.14.5.9
-Speedy v0.0.4
+Speedy v0.0.5
 
 Benchmarks: 7
 Timeout: 1000ms (1s 0ms)
@@ -49,19 +48,19 @@ Total benchmark time: ~21000ms (21s 0ms)
 Higher is better (ops/sec)
 
 0
-  1,339,182
+  1,338,932 +/- 0.1%
 1
-  1,340,928
+  1,340,285 +/- 0.0%
 2
-  1,340,219
+  1,339,234 +/- 0.0%
 3
-  1,009,091
+  1,008,162 +/- 0.0%
 4
-  1,009,334
+  1,008,282 +/- 0.0%
 5
-  17,815
+  18,131 +/- 0.0%
 6
-  1,339,237
+  1,338,577 +/- 0.0%
 
-Elapsed time: 21342ms (21s 342ms)
+Elapsed time: 21419ms (21s 419ms)
 */

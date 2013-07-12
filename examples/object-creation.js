@@ -19,7 +19,7 @@ File: object-creation.js
 
 Node v0.10.12
 V8 v3.14.5.9
-Speedy v0.0.4
+Speedy v0.0.5
 
 Benchmarks: 3
 Timeout: 1000ms (1s 0ms)
@@ -30,11 +30,11 @@ Total benchmark time: ~9000ms (9s 0ms)
 Higher is better (ops/sec)
 
 literal
-  143,887,810
+  139,331,074 +/- 0.2%
 constructor
-  36,618,481
+  36,154,771 +/- 0.1%
 create
-  8,014,581
+  7,995,637 +/- 0.0%
 
-Elapsed time: 9173ms (9s 173ms)
+Elapsed time: 9188ms (9s 188ms)
 */

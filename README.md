@@ -5,7 +5,7 @@ _Node.js project_
 
 #### Tiny benchmark utility ####
 
-Version: 0.0.4
+Version: 0.0.5
 
 Performs a benchmark of almost any test case.
 

@@ -16,7 +16,7 @@ File: array-creation.js
 
 Node v0.10.12
 V8 v3.14.5.9
-Speedy v0.0.4
+Speedy v0.0.5
 
 Benchmarks: 2
 Timeout: 1000ms (1s 0ms)
@@ -27,9 +27,9 @@ Total benchmark time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 literal
-  133,004,722
+  133,525,772 +/- 0.2%
 constructor
-  79,416,933
+  79,639,957 +/- 0.3%
 
 Elapsed time: 6131ms (6s 131ms)
 */

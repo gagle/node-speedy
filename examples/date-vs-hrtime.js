@@ -19,7 +19,7 @@ File: date-vs-hrtime.js
 
 Node v0.10.12
 V8 v3.14.5.9
-Speedy v0.0.4
+Speedy v0.0.5
 
 Benchmarks: 2
 Timeout: 1000ms (1s 0ms)
@@ -30,9 +30,9 @@ Total benchmark time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 date
-  23,944,344
+  23,588,802 +/- 0.1%
 hrtime
-  3,326,932
+  3,316,585 +/- 0.0%
 
-Elapsed time: 6101ms (6s 101ms)
+Elapsed time: 6130ms (6s 130ms)
 */
