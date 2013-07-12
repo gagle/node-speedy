@@ -53,7 +53,9 @@ npm install speedy
 
 <a name="run"></a>
 ___module_.run([name][, fn][, callback]) : undefined__  
-Executes the benchmark. If a `callback` is passed the raw data will be returned as a parameter and nothing will be printed in the stdout.
+Executes the benchmark. The results are displayed as a mean of operations per second followed by the standard error in percentage of this mean.
+
+If a `callback` is passed the raw data will be returned as a parameter and nothing will be printed in the stdout.
 
 The returned value is an array, each index stores the result of each test; an object with a `raw` property storing an array with all the results and a `name` property storing the name of the test, if any. For example, a baseline benchmark with default attributes (samples 3, timeout 1000):
 
