@@ -14,9 +14,9 @@ speedy.run ({
 /*
 File: timestamp.js
 
-Node v0.10.12
+Node v0.10.13
 V8 v3.14.5.9
-Speedy v0.0.5
+Speedy v0.0.6
 
 Benchmarks: 2
 Timeout: 1000ms (1s 0ms)
@@ -27,9 +27,9 @@ Total benchmark time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 now
-  24,340,626 +/- 0.0%
+  24,171,448 +/- 0.1%
 getTime
-  10,043,085 +/- 0.1%
+  10,063,260 +/- 0.0%
 
-Elapsed time: 6131ms (6s 131ms)
+Elapsed time: 6162ms (6s 162ms)
 */

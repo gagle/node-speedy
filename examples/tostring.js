@@ -3,19 +3,19 @@
 var speedy = require ("../lib");
 
 speedy.run ({
-	literal: function (){
-		return {};
+	String: function (){
+		String (123);
 	},
-	constructor: function (){
-		return new Object ();
+	toString: function (){
+		(123).toString ();
 	},
-	create: function (){
-		return Object.create (Object.prototype);
+	"\"\"": function (){
+		123 + "";
 	}
 });
 
 /*
-File: object-creation.js
+File: tostring.js
 
 Node v0.10.13
 V8 v3.14.5.9
@@ -29,12 +29,12 @@ Total benchmark time: ~9000ms (9s 0ms)
 
 Higher is better (ops/sec)
 
-literal
-  145,354,103 +/- 0.2%
-constructor
-  36,533,942 +/- 0.0%
-create
-  7,941,158 +/- 0.0%
+String
+  42,483,915 +/- 0.0%
+toString
+  70,049,610 +/- 0.0%
+""
+  108,087,114 +/- 0.0%
 
 Elapsed time: 9235ms (9s 235ms)
 */

@@ -5,7 +5,7 @@ var speedy = require ("../lib");
 var a1 = [], i1 = 0;
 var a2 = [], i2 = 0;
 var a3 = [], i3 = 0;
-var n = 10000;
+var n = 100;
 
 speedy.run ({
 	push: function (){
@@ -40,9 +40,9 @@ The results vary depending on the array length
 
 File: array-population.js
 
-Node v0.10.12
+Node v0.10.13
 V8 v3.14.5.9
-Speedy v0.0.5
+Speedy v0.0.6
 
 Benchmarks: 3
 Timeout: 1000ms (1s 0ms)
@@ -57,31 +57,31 @@ Higher is better (ops/sec)
 n = 100
 
 push
-  79,817,575 +/- 0.1%
+  80,199,962 +/- 0.1%
 length
-  53,243,141 +/- 0.5%
+  53,423,748 +/- 0.2%
 index
-  54,026,383 +/- 0.2%
+  54,175,621 +/- 0.0%
 
 	
 
 n = 10000
 
 push
-  68,356,388 +/- 0.0%
+  68,572,205 +/- 0.0%
 length
-  71,261,601 +/- 0.1%
+  71,030,639 +/- 0.0%
 index
-  72,569,540 +/- 0.1%
+  72,475,634 +/- 0.0%
 
 	
 	
 n = 1000000
 
 push
-  23,018,775 +/- 0.6%
+  22,375,926 +/- 0.2%
 length
-  19,397,058 +/- 0.6%
+  19,028,811 +/- 0.3%
 index
-  19,585,409 +/- 1.4%
+  19,295,626 +/- 0.3%
 */

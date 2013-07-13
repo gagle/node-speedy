@@ -17,9 +17,9 @@ speedy.run ({
 /*
 File: date-vs-hrtime.js
 
-Node v0.10.12
+Node v0.10.13
 V8 v3.14.5.9
-Speedy v0.0.5
+Speedy v0.0.6
 
 Benchmarks: 2
 Timeout: 1000ms (1s 0ms)
@@ -30,9 +30,9 @@ Total benchmark time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 date
-  23,588,802 +/- 0.1%
+  23,648,206 +/- 0.0%
 hrtime
-  3,316,585 +/- 0.0%
+  3,303,525 +/- 0.0%
 
-Elapsed time: 6130ms (6s 130ms)
+Elapsed time: 6162ms (6s 162ms)
 */

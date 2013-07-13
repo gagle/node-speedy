@@ -2,17 +2,22 @@
 
 var speedy = require ("../lib");
 
+var fn1 = function (){
+	this.a = 1;
+}.bind ({});
+
+var me2 = {};
+var fn2 = function (){
+	me2.a = 1;
+};
+
 speedy.run ({
-	literal: function (){
-		return [];
-	},
-	constructor: function (){
-		return new Array ();
-	}
+	bind: fn1,
+	me: fn2
 });
 
 /*
-File: array-creation.js
+File: bind.js
 
 Node v0.10.13
 V8 v3.14.5.9
@@ -26,10 +31,10 @@ Total benchmark time: ~6000ms (6s 0ms)
 
 Higher is better (ops/sec)
 
-literal
-  133,534,838 +/- 0.1%
-constructor
-  79,540,605 +/- 0.1%
+bind
+  8,970,513 +/- 0.0%
+me
+  141,976,230 +/- 0.0%
 
-Elapsed time: 6147ms (6s 147ms)
+Elapsed time: 6162ms (6s 162ms)
 */

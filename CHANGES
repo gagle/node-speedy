@@ -1,4 +1,11 @@
-v0.0.5 (XX Jul 2013)
+v0.0.6 (13 Jul 2013)
+	The results of each test are now returned when they are available.
+	The API has been modified.
+		Now an event emitter will be returned instead of passing a callback to the
+			run() function.
+		The output stream can be set (stdout, file, socket...).
+
+v0.0.5 (12 Jul 2013)
 	Added standard error in percentage.
 
 v0.0.4 (07 Jul 2013)

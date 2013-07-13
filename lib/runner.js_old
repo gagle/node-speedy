@@ -21,10 +21,10 @@ var async = (function (){
 	}
 })();
 
-var run = function (fn, timeout, ignore, cb){
+var run = function (fn, timeout, r, cb){
   var calls = 0;
 	var startTime = Date.now ();
-	var stopTime = startTime + (ignore ? timeout : 10);
+	var stopTime = startTime + (r ? timeout : 10);
 	var hr = process.hrtime ();
 	
 	if (fn.length){
@@ -68,8 +68,6 @@ var Runner = module.exports = function (tests){
 	this._tests = tests;
 	this._samples = SAMPLES;
 	this._timeout = TIMEOUT;
-	this._totalProgress = null;
-	this._currentProgress = 0;
 	
 	if (this._anonymous){
 		this._results = [];
@@ -81,18 +79,12 @@ var Runner = module.exports = function (tests){
 		});
 	}
 	
-	var me = this;
 	process.nextTick (function (){
-		me._totalProgress = me._tests.length*(me._samples - 1);
-		me._prepare ();
+		me._execute ();
 	});
 };
 
 util.inherits (Runner, events.EventEmitter);
-
-Runner.prototype._progress = function (){
-	return ++this._currentProgress/this._totalProgress;
-};
 
 Runner.prototype._end = function (){
 	var data = [];
@@ -113,63 +105,37 @@ Runner.prototype._end = function (){
 	this.emit ("end", data);
 };
 
-Runner.prototype._prepare = function (){
-	//Runs all the benchmarks to warm-up the virtual machine
-	var len = this._tests.length;
-	var me = this;
-	
-	(function benchmark (i){
-		if (i === len){
-			return me._execute ();
-		}
-		
-		run (me._tests[i].fn, null, null, function (n){
-			benchmark (i + 1);
-		});
-	})(0);
-};
-
 Runner.prototype._execute = function (){
 	var me = this;
-	var testsLength = me._tests.length;
 	
-	(function benchmark (i){
-		if (i === testsLength){
-			return me._end ();
-		}
+	(function repeat (r){
+		if (r === me._samples) return me._end ();
 		
-		(function sample (s){
-			if (s === me._samples){
-				var o = {};
+		var testsLength = me._tests.length;
+		
+		(function benchmark (i){
+			if (i !== testsLength){
 				var test = me._tests[i];
-				
-				if (me._anonymous){
-					o.raw = me._results;
-				}else{
-					o.name = test.name;
-					o.raw = me._results[test.name];
-				}
-				
-				me.emit ("function", o);
-				return benchmark (i + 1);
-			}
-			
-			var test = me._tests[i];
-			run (test.fn, me._timeout, s, function (n){
-				//The first run is ignored because produces inconsistent values
-				//Virtual machine warm-up stuff
-				if (s){
-					me.emit ("progress", me._progress ());
-					
-					if (me._anonymous){
-						me._results.push (n);
-					}else{
-						me._results[test.name].push (n);
+				run (test.fn, me._timeout, r, function (n){
+					//The first run is ignored because produces inconsistent values
+					//Virtual machine warm-up stuff
+					if (r){
+						if (me._anonymous){
+							me._results.push (n);
+						}else{
+							me._results[test.name].push (n);
+						}
 					}
-				}
-				
-				sample (s + 1);
-			});
+					
+					setImmediate (function (){
+						benchmark (i + 1);
+					});
+				});
+			}else{
+				setImmediate (function (){
+					repeat (r + 1);
+				});
+			}
 		})(0);
 	})(0);
 };
