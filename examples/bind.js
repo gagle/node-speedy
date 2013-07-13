@@ -32,9 +32,9 @@ Total benchmark time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 bind
-  8,970,513 +/- 0.0%
+  8,970,513 ± 0.0%
 me
-  141,976,230 +/- 0.0%
+  141,976,230 ± 0.0%
 
 Elapsed time: 6162ms (6s 162ms)
 */

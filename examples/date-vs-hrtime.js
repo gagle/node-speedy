@@ -30,9 +30,9 @@ Total benchmark time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 date
-  23,648,206 +/- 0.0%
+  23,648,206 ± 0.0%
 hrtime
-  3,303,525 +/- 0.0%
+  3,303,525 ± 0.0%
 
 Elapsed time: 6162ms (6s 162ms)
 */

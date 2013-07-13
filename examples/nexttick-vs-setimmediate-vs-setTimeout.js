@@ -30,11 +30,11 @@ Total benchmark time: ~9000ms (9s 0ms)
 Higher is better (ops/sec)
 
 nextTick
-  4,153,504 +/- 0.1%
+  4,153,504 ± 0.1%
 setImmediate
-  432,104 +/- 0.0%
+  432,104 ± 0.0%
 setTimeout
-  64 +/- 0.1%
+  64 ± 0.1%
 
 Elapsed time: 9236ms (9s 236ms)
 */

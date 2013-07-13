@@ -27,9 +27,9 @@ Total benchmark time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 now
-  24,171,448 +/- 0.1%
+  24,171,448 ± 0.1%
 getTime
-  10,063,260 +/- 0.0%
+  10,063,260 ± 0.0%
 
 Elapsed time: 6162ms (6s 162ms)
 */

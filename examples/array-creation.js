@@ -27,9 +27,9 @@ Total benchmark time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 literal
-  133,534,838 +/- 0.1%
+  133,534,838 ± 0.1%
 constructor
-  79,540,605 +/- 0.1%
+  79,540,605 ± 0.1%
 
 Elapsed time: 6147ms (6s 147ms)
 */

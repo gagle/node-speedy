@@ -30,11 +30,11 @@ Total benchmark time: ~9000ms (9s 0ms)
 Higher is better (ops/sec)
 
 String
-  42,483,915 +/- 0.0%
+  42,483,915 ± 0.0%
 toString
-  70,049,610 +/- 0.0%
+  70,049,610 ± 0.0%
 ""
-  108,087,114 +/- 0.0%
+  108,087,114 ± 0.0%
 
 Elapsed time: 9235ms (9s 235ms)
 */
