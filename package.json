@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/Gagle/node-speedy.git"
+		"url": "git://github.com/gagle/node-speedy.git"
 	},
 	"engines": {
 		"node": ">=0.10"
