@@ -10,7 +10,9 @@ speedy.run ({
 		fn1 ();
 	},
 	"if": function (){
-		if (fn2) fn2 ();
+		//"noop" performs 1 closure lookup, "if" should also lookup 1 time
+		var fn = fn2;
+		if (fn) fn ();
 	}
 });
 
@@ -30,9 +32,9 @@ Total time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 noop
-  173,113,069 ± 0.0%
+  175,132,047 ± 0.0%
 if
-  172,320,774 ± 0.0%
+  174,435,127 ± 0.0%
 
 Elapsed time: 6131ms (6s 131ms)
 */
