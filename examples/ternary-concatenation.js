@@ -5,14 +5,16 @@ var speedy = require ("../lib");
 speedy.run ({
 	ternary: function (){
 		var s = "s";
-		s += (true ? "s" : "") + "s";
+		s += (false ? "s" : "") + "s";
 	},
 	"if": function (){
 		var s = "s";
-		if (true) s += "s";
+		if (false) s += "s";
 		s += "s";
 	}
 });
+
+//If the boolean value is true the both results are the same
 
 /*
 File: ternary-concatenation.js
@@ -30,9 +32,9 @@ Total time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 ternary
-  40,437,668 ± 0.6%
+  60,211,585 ± 0.0%
 if
-  40,541,298 ± 0.0%
+  68,274,787 ± 0.0%
 
-Elapsed time: 6141ms (6s 141ms)
+Elapsed time: 6131ms (6s 131ms)
 */
