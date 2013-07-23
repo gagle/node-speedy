@@ -41,7 +41,7 @@ npm install speedy
 
 #### Functions ####
 
-- [_module_.run([name][, fn][, callback]) : EventEmitter](#run)
+- [_module_.run([name][, fn][, settings]) : EventEmitter](#run)
 - [_module_.samples([n]) : undefined | Number](#samples)
 - [_module_.timeout([n]) : undefined | Number](#timeout)
 
