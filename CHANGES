@@ -1,3 +1,6 @@
+v0.0.8 (23 Jul 2013)
+	Bugfix with the "end" event. Couldn't start another benchmark.
+
 v0.0.7 (17 Jul 2013)
 	Modified general information printed in console.
 

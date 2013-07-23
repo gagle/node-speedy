@@ -21,7 +21,7 @@ File: noop.js
 
 Node v0.10.13
 V8 v3.14.5.9
-Speedy v0.0.7
+Speedy v0.0.8
 
 Benchmarks: 2
 Timeout: 1000ms (1s 0ms)
