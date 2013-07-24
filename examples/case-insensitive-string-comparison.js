@@ -6,7 +6,7 @@ speedy.run ({
 	toLowerCase: function (){
 		"ABC".toLowerCase () === "abc".toLowerCase ();
 	},
-	regexp: function (){
+	test: function (){
 		/^ABC$/i.test ("abc");
 	},
 	match: function (){
@@ -31,7 +31,7 @@ Higher is better (ops/sec)
 
 toLowerCase
   14,666,483 ± 0.0%
-regexp
+test
   24,502,498 ± 0.1%
 match
   16,072,184 ± 0.0%
