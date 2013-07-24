@@ -30,11 +30,11 @@ Total time: ~9000ms (9s 0ms)
 Higher is better (ops/sec)
 
 toLowerCase
-  14,666,483 ± 0.0%
+  14,992,251 ± 0.0%
 test
-  24,502,498 ± 0.1%
+  24,612,579 ± 0.0%
 match
-  16,072,184 ± 0.0%
+  16,240,736 ± 0.0%
 
-Elapsed time: 9078ms (9s 78ms)
+Elapsed time: 9077ms (9s 77ms)
 */
