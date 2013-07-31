@@ -11,30 +11,35 @@ speedy.run ({
 	},
 	"\"\"": function (){
 		123 + "";
+	},
+	json: function (){
+		JSON.stringify (123);
 	}
 });
 
 /*
 File: tostring.js
 
-Node v0.10.13
+Node v0.10.15
 V8 v3.14.5.9
 Speedy v0.0.8
 
-Benchmarks: 3
+Benchmarks: 4
 Timeout: 1000ms (1s 0ms)
 Samples: 3
 Total time per benchmark: ~3000ms (3s 0ms)
-Total time: ~9000ms (9s 0ms)
+Total time: ~12000ms (12s 0ms)
 
 Higher is better (ops/sec)
 
 String
-  42,483,915 ± 0.0%
+  43,356,789 ± 0.0%
 toString
-  70,049,610 ± 0.0%
+  70,357,490 ± 0.0%
 ""
-  108,087,114 ± 0.0%
+  109,046,072 ± 0.0%
+json
+  18,314,696 ± 0.0%
 
-Elapsed time: 9235ms (9s 235ms)
+Elapsed time: 12292ms (12s 292ms)
 */
