@@ -7,7 +7,7 @@ _Node.js project_
 
 Version: 0.0.8
 
-If you need to benchmark some sort of code or if you are writing a module and want to see how well it performs in comparison with older versions, you can use `speedy`. It is for rapid prototyping and informal benchmarks, don't use it for serious jobs like HTTP servers benchmarks.
+If you need to benchmark some sort of code or if you are writing a module and want to see how well it performs in comparison with older versions, you can use `speedy`. It is for rapid prototyping and informal benchmarks, don't use it for serious jobs like HTTP server benchmarking.
 
 This module doesn't check for errors so make sure your code doesn't break before running the benchmark.
 
