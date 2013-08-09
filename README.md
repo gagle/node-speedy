@@ -41,18 +41,18 @@ npm install speedy
 
 #### Functions ####
 
-- [_module_.run([name][, fn][, settings]) : EventEmitter](#run)
+- [_module_.run([name][, fn][, options]) : EventEmitter](#run)
 - [_module_.samples([n]) : undefined | Number](#samples)
 - [_module_.timeout([n]) : undefined | Number](#timeout)
 
 ---
 
 <a name="run"></a>
-___module_.run([name][, fn][, settings]) : EventEmitter__
+___module_.run([name][, fn][, options]) : EventEmitter__
 
 Executes the benchmark. The results are displayed as a mean of operations per second followed by the standard error in percentage. The error should be less than 1%, typically less than 0.5%. If the error is greater than 1% then something went wrong and the mean is not as accurate as it can be.
 
-`settings` is an object that accepts the following settings:
+Options:
 
 - output - _WritableStream_  
 	By default the results will be sent to the stdout but any writable stream can be used.
@@ -64,7 +64,7 @@ Executes the benchmark. The results are displayed as a mean of operations per se
 
 The returned value is an event emitter that emits the following events:
 
-- end  
+- __end__  
 	Emitted when all the benchmarks finish. The callback receives an array. Each index stores the result of each function: an object with a `raw` property storing an array with all the results and a `name` property storing the name of the function, if any, just like the result of the `function` event.
 
 	For example, a baseline benchmark with default attributes (samples 3, timeout 1000):
@@ -82,8 +82,8 @@ The returned value is an event emitter that emits the following events:
 	});
 	```
 
-- function  
-	Emitted for each function when its benchmark finishes. The callback receives an object with the following settings:
+- __function__  
+	Emitted for each function when its benchmark finishes. The callback receives an object with the following options:
 	
 	- name - _String_  
 		The name of the function. If the function is anonymous this property is not present in the object.
@@ -91,7 +91,7 @@ The returned value is an event emitter that emits the following events:
 		Array with the results of all the samples. The number of samples can be changed with [samples()](#samples).
 
 	This event is emitted before the `end` event.
-- progress  
+- __progress__  
 	Emitted when a sample has been run. The callback receives a number between (0, 1]. 1 means that 100% of the job has been done.
 
 	This event is emitted before the `function` and `end` events.
