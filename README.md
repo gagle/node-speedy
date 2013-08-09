@@ -54,7 +54,7 @@ Executes the benchmark. The results are displayed as a mean of operations per se
 
 Options:
 
-- output - _WritableStream_  
+- __output__ - _WritableStream_  
 	By default the results will be sent to the stdout but any writable stream can be used.
 	
 	```javascript
@@ -85,9 +85,9 @@ The returned value is an event emitter that emits the following events:
 - __function__  
 	Emitted for each function when its benchmark finishes. The callback receives an object with the following options:
 	
-	- name - _String_  
+	- __name__ - _String_  
 		The name of the function. If the function is anonymous this property is not present in the object.
-	- raw - _Array_  
+	- __raw__ - _Array_  
 		Array with the results of all the samples. The number of samples can be changed with [samples()](#samples).
 
 	This event is emitted before the `end` event.
