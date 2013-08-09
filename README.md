@@ -48,7 +48,8 @@ npm install speedy
 ---
 
 <a name="run"></a>
-___module_.run([name][, fn][, settings]) : EventEmitter__  
+___module_.run([name][, fn][, settings]) : EventEmitter__
+
 Executes the benchmark. The results are displayed as a mean of operations per second followed by the standard error in percentage. The error should be less than 1%, typically less than 0.5%. If the error is greater than 1% then something went wrong and the mean is not as accurate as it can be.
 
 `settings` is an object that accepts the following settings:
@@ -162,7 +163,8 @@ c
 ---
 
 <a name="samples"></a>
-___module_.samples([n]) : undefined | Number__  
+___module_.samples([n]) : undefined | Number__
+
 Changes or returns the number of samples per function. With more samples the final result will be more stable. An arithmetic mean is calculated with all the samples. Default is 3.
 
 
@@ -173,7 +175,8 @@ speedy.samples (10);
 ---
 
 <a name="timeout"></a>
-___module_.timeout([n]) : undefined | Number__  
+___module_.timeout([n]) : undefined | Number__
+
 Changes or returns the execution time per function, in milliseconds. Higher values tend to imply more precise results. Default is 1000.
 
 ```javascript
