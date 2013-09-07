@@ -30,36 +30,43 @@ speedy.run ({
 	"6": function (){
 		var i;
 		for (i=0; i<array.length; i++);
+	},
+	"7": function (){
+		array.forEach (function (){});
 	}
 });
 
 /*
-Node v0.10.13
+File: loop.js
+
+Node v0.10.18
 V8 v3.14.5.9
 Speedy v0.0.8
 
-Benchmarks: 7
+Benchmarks: 8
 Timeout: 1000ms (1s 0ms)
 Samples: 3
 Total time per benchmark: ~3000ms (3s 0ms)
-Total time: ~21000ms (21s 0ms)
+Total time: ~24000ms (24s 0ms)
 
 Higher is better (ops/sec)
 
 0
-  1,337,009 ± 0.1%
+  1,339,405 ± 0.0%
 1
-  1,340,505 ± 0.0%
+  1,340,972 ± 0.0%
 2
-  1,339,988 ± 0.0%
+  1,339,774 ± 0.0%
 3
-  1,008,591 ± 0.0%
+  1,009,093 ± 0.0%
 4
-  1,008,592 ± 0.0%
+  1,009,276 ± 0.0%
 5
-  18,430 ± 0.0%
+  18,737 ± 0.0%
 6
-  1,338,650 ± 0.0%
+  1,340,932 ± 0.0%
+7
+  35,691 ± 0.0%
 
-Elapsed time: 21528ms (21s 528ms)
+Elapsed time: 24223ms (24s 223ms)
 */
