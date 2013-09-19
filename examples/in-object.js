@@ -2,19 +2,21 @@
 
 var speedy = require ("../lib");
 
+var o = {};
+
 speedy.run ({
 	"in": function (){
-		"a" in { a: null };
+		"a" in o;
 	},
-	"getter": function (){
-		({ a: true }).a;
+	"undefined": function (){
+		o.a !== undefined;
 	}
 });
 
 /*
-File: check-object-property.js
+File: in-object.js
 
-Node v0.10.13
+Node v0.10.18
 V8 v3.14.5.9
 Speedy v0.0.8
 
@@ -27,9 +29,9 @@ Total time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 in
-  19,155,210 ± 0.0%
-getter
-  116,940,967 ± 0.1%
+  16,369,267 ± 0.0%
+undefined
+  150,835,791 ± 0.1%
 
-Elapsed time: 6054ms (6s 54ms)
+Elapsed time: 6053ms (6s 53ms)
 */
