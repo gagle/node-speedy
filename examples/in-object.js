@@ -9,7 +9,7 @@ speedy.run ({
 		"a" in o;
 	},
 	"undefined": function (){
-		o.a !== undefined;
+		o.a === undefined;
 	}
 });
 
@@ -29,9 +29,9 @@ Total time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 in
-  16,369,267 ± 0.0%
+  16,279,539 ± 0.0%
 undefined
-  150,835,791 ± 0.1%
+  151,203,277 ± 0.0%
 
 Elapsed time: 6053ms (6s 53ms)
 */
