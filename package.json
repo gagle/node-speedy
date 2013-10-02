@@ -3,14 +3,8 @@
 	"version": "0.0.8",
 	"description": "Tiny benchmark utility",
 	"keywords": ["benchmark", "speed"],
-	"author": {
-		"name": "Gabriel Llamas",
-		"email": "gagle@outlook.com"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/gagle/node-speedy.git"
-	},
+	"author": "Gabriel Llamas <gagle@outlook.com>",
+	"repository": "git://github.com/gagle/node-speedy.git",
 	"engines": {
 		"node": ">=0.10"
 	},
