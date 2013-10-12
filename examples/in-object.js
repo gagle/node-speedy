@@ -9,14 +9,14 @@ speedy.run ({
 		"a" in o;
 	},
 	"undefined": function (){
-		o.a === undefined;
+		o.a !== undefined;
 	}
 });
 
 /*
 File: in-object.js
 
-Node v0.10.18
+Node v0.10.20
 V8 v3.14.5.9
 Speedy v0.0.8
 
@@ -29,9 +29,9 @@ Total time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 in
-  16,279,539 ± 0.0%
+  16,982,098 ± 0.0%
 undefined
-  151,203,277 ± 0.0%
+  152,094,766 ± 0.0%
 
-Elapsed time: 6053ms (6s 53ms)
+Elapsed time: 6146ms (6s 146ms)
 */
