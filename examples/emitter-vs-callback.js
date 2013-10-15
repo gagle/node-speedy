@@ -14,26 +14,26 @@ Emitter.prototype.ping = function (){
 	this.emit ("ping");
 };
 
+var emitter = new Emitter ();
+emitter.on ("ping", function (){
+	 this._done ();
+});
+
 var Callback = function (){};
 
-Callback.prototype.once = function (ping){
-	this._ping = ping;
-};
-
 Callback.prototype.ping = function (){
-	this._ping ();
+	this._done ();
 };
 
-var emitter = new Emitter ();
 var callback = new Callback ();
 
 speedy.run ({
 	emitter: function (done){
-		emitter.once ("ping", done);
+		emitter._done = done;
 		emitter.ping ();
 	},
 	callback: function (done){
-		callback.once (done);
+		callback._done = done;
 		callback.ping ();
 	}
 });
