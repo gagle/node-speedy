@@ -17,19 +17,19 @@ A recursive loop is used to measure the speed of the code. There are basically 2
 
 ```javascript
 var async = (function (){
-	var i = 0;
-	return function (fn){
-		if (i++ < 100){
-			process.nextTick (fn);
-		}else{
-			setImmediate (fn);
-			i = 0;
-		}
-	}
+  var i = 0;
+  return function (fn){
+    if (i++ < 100){
+      process.nextTick (fn);
+    }else{
+      setImmediate (fn);
+      i = 0;
+    }
+  }
 })();
 
 async (function (){
-	//Asynchronous code
+  //Asynchronous code
 });
 ```
 
