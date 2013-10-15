@@ -81,16 +81,18 @@ Stores the name of the function, if any. It is like the result of the `test` eve
 For example, a baseline benchmark with default options (samples 3, timeout 1000):
 
 ```javascript
-speedy.run (function fn (){}).on ("end", function (data){
-	console.log (data);
-	
-	/*
-	[{
-		name: "fn",
-		raw: [ 226159317.37112886, 225275805.0081939, 226232582.25479224 ]
-	}]
-	*/
-});
+speedy
+    .on ("end", function (data){
+      console.log (data);
+      
+      /*
+      [{
+        name: "fn",
+        raw: [ 226159317.37112886, 225275805.0081939, 226232582.25479224 ]
+      }]
+      */
+    })
+    .run (function fn (){});
 ```
 
 <a name="event_progress"></a>
@@ -115,7 +117,7 @@ This event is emitted before the `end` event.
 ---
 
 <a name="run"></a>
-___module_.run([name][, fn][, options]) : EventEmitter__
+__Speedy#run([name][, fn][, options]) : Speedy__
 
 Executes the benchmark. The results are displayed with an arithmetic mean of operations per second followed by the standard error in percentage. The error should be less than 1%, typically less than 0.5%. If the error is greater than 1% then something went wrong and the mean is not as accurate as it can be.
 
@@ -135,8 +137,8 @@ Simply execute the callback when you are ready to iterate again. The asynchronou
 
 ```javascript
 speedy.run (function (done){
-	//...
-	done ();
+  //...
+  done ();
 });
 ```
 
@@ -178,9 +180,9 @@ Batch:
 
 ```javascript
 speedy.run ({
-	a: function (){},
-	b: function (){},
-	c: function (){}
+  a: function (){},
+  b: function (){},
+  c: function (){}
 });
 
 /*
@@ -196,7 +198,7 @@ c
 ---
 
 <a name="samples"></a>
-___module_.samples([n]) : undefined | Number__
+__Speedy#samples([n]) : undefined | Number__
 
 Changes or returns the number of samples per test. With more samples the final result will be more stable. An arithmetic mean is calculated with all the samples. Default is 3.
 
@@ -208,7 +210,7 @@ speedy.samples (10);
 ---
 
 <a name="timeout"></a>
-___module_.timeout([n]) : undefined | Number__
+__Speedy#timeout([n]) : undefined | Number__
 
 Changes or returns the execution time per sample, in milliseconds. Higher values tend to imply more precise results. Default is 1000.
 
