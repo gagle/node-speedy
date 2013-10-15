@@ -66,26 +66,26 @@ speedy.run ({
 /*
 File: string-conversion.js
 
-Node v0.10.18
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 4
+Tests: 4
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~12000ms (12s 0ms)
 
 Higher is better (ops/sec)
 
 cast 1
-  6,306,660 ± 0.1%
+  6,267,986 ± 0.3%
 cast 2
-  3,320,318 ± 0.0%
+  3,328,173 ± 0.0%
 cast 3
-  55,964 ± 0.1%
+  59,331 ± 0.0%
 cast 4
-  83,991 ± 0.0%
+  88,774 ± 0.1%
 
-Elapsed time: 12271ms (12s 271ms)
+Elapsed time: 12114ms (12s 114ms)
 */

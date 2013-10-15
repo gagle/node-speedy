@@ -24,22 +24,22 @@ speedy.run ({
 /*
 File: charcodeat.js
 
-Node v0.10.13
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 2
+Tests: 2
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~6000ms (6s 0ms)
 
 Higher is better (ops/sec)
 
 char
-  7,624,538 ± 0.1%
+  7,333,696 ± 0.1%
 string
-  13,472,480 ± 0.0%
+  13,264,620 ± 0.0%
 
-Elapsed time: 6132ms (6s 132ms)
+Elapsed time: 6055ms (6s 55ms)
 */

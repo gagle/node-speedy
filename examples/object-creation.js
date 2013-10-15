@@ -17,24 +17,24 @@ speedy.run ({
 /*
 File: object-creation.js
 
-Node v0.10.13
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 3
+Tests: 3
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~9000ms (9s 0ms)
 
 Higher is better (ops/sec)
 
 literal
-  145,354,103 ± 0.2%
+  143,964,776 ± 0.1%
 constructor
-  36,533,942 ± 0.0%
+  36,601,799 ± 0.0%
 create
-  7,941,158 ± 0.0%
+  8,154,970 ± 0.0%
 
-Elapsed time: 9235ms (9s 235ms)
+Elapsed time: 9220ms (9s 220ms)
 */

@@ -17,24 +17,24 @@ speedy.run ({
 /*
 File: nexttick-vs-setimmediate-vs-setTimeout.js
 
-Node v0.10.13
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 3
+Tests: 3
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~9000ms (9s 0ms)
 
 Higher is better (ops/sec)
 
 nextTick
-  4,153,504 ± 0.1%
+  4,060,465 ± 0.1%
 setImmediate
-  432,104 ± 0.0%
+  413,734 ± 0.1%
 setTimeout
   64 ± 0.1%
 
-Elapsed time: 9236ms (9s 236ms)
+Elapsed time: 9220ms (9s 220ms)
 */

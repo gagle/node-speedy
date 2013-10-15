@@ -7,34 +7,33 @@ var fn2;
 
 speedy.run ({
 	noop: function (){
+		//"if" does one more closure lookup
 		fn1 ();
 	},
-	"if": function (){
-		//"noop" performs 1 closure lookup, "if" should also lookup 1 time
-		var fn = fn2;
-		if (fn) fn ();
+	if: function (){
+		if (fn2) fn2 ();
 	}
 });
 
 /*
 File: noop.js
 
-Node v0.10.13
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 2
+Tests: 2
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~6000ms (6s 0ms)
 
 Higher is better (ops/sec)
 
 noop
-  175,132,047 ± 0.0%
+  171,897,675 ± 0.1%
 if
-  174,435,127 ± 0.0%
+  172,696,560 ± 0.0%
 
-Elapsed time: 6131ms (6s 131ms)
+Elapsed time: 6147ms (6s 147ms)
 */

@@ -38,28 +38,25 @@ speedy.run ({
 	}
 });
 
-//EventEmitters produces higher standard error values, typically above 1%, and
-//are quite inconsistent
-
 /*
 File: emitter-vs-callback.js
 
-Node v0.10.13
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 2
+Tests: 2
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~6000ms (6s 0ms)
 
 Higher is better (ops/sec)
 
 emitter
-  1,942,550 ± 1.1%
+  684,655 ± 0.4%
 callback
-  5,639,449 ± 0.0%
+  5,535,242 ± 0.0%
 
-Elapsed time: 6054ms (6s 54ms)
+Elapsed time: 6053ms (6s 53ms)
 */

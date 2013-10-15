@@ -39,34 +39,34 @@ speedy.run ({
 /*
 File: loop.js
 
-Node v0.10.18
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 8
+Tests: 8
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~24000ms (24s 0ms)
 
 Higher is better (ops/sec)
 
 0
-  1,339,405 ± 0.0%
+  1,340,104 ± 0.0%
 1
-  1,340,972 ± 0.0%
+  1,342,411 ± 0.0%
 2
-  1,339,774 ± 0.0%
+  1,342,063 ± 0.0%
 3
-  1,009,093 ± 0.0%
+  1,009,996 ± 0.0%
 4
-  1,009,276 ± 0.0%
+  1,009,568 ± 0.0%
 5
-  18,737 ± 0.0%
+  18,652 ± 0.0%
 6
-  1,340,932 ± 0.0%
+  1,341,659 ± 0.0%
 7
-  35,691 ± 0.0%
+  36,010 ± 0.0%
 
-Elapsed time: 24223ms (24s 223ms)
+Elapsed time: 24586ms (24s 586ms)
 */

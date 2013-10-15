@@ -17,24 +17,24 @@ speedy.run ({
 /*
 File: case-insensitive-string-comparison.js
 
-Node v0.10.13
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 3
+Tests: 3
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~9000ms (9s 0ms)
 
 Higher is better (ops/sec)
 
 toLowerCase
-  14,992,251 ± 0.0%
+  14,483,687 ± 0.0%
 test
-  24,612,579 ± 0.0%
+  24,385,809 ± 0.0%
 match
-  16,240,736 ± 0.0%
+  15,678,777 ± 0.1%
 
 Elapsed time: 9077ms (9s 77ms)
 */

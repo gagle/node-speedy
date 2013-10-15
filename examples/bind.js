@@ -13,28 +13,28 @@ var fn2 = function (){
 
 speedy.run ({
 	bind: fn1,
-	me: fn2
+	closure: fn2
 });
 
 /*
 File: bind.js
 
-Node v0.10.13
+Node v0.10.20
 V8 v3.14.5.9
-Speedy v0.0.8
+Speedy v0.1.0
 
-Benchmarks: 2
+Tests: 2
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~6000ms (6s 0ms)
 
 Higher is better (ops/sec)
 
 bind
-  8,970,513 ± 0.0%
-me
-  141,976,230 ± 0.0%
+  8,521,553 ± 0.0%
+closure
+  141,914,040 ± 0.0%
 
-Elapsed time: 6162ms (6s 162ms)
+Elapsed time: 6053ms (6s 53ms)
 */

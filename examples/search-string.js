@@ -27,32 +27,34 @@ speedy.run ({
 });
 
 /*
-Node v0.10.15
-V8 v3.14.5.9
-Speedy v0.0.8
+File: search-string.js
 
-Benchmarks: 7
+Node v0.10.20
+V8 v3.14.5.9
+Speedy v0.1.0
+
+Tests: 7
 Timeout: 1000ms (1s 0ms)
 Samples: 3
-Total time per benchmark: ~3000ms (3s 0ms)
+Total time per test: ~3000ms (3s 0ms)
 Total time: ~21000ms (21s 0ms)
 
 Higher is better (ops/sec)
 
 exec
-  10,508,332 ± 0.4%
+  10,579,829 ± 0.3%
 test
-  13,756,109 ± 0.0%
+  13,993,127 ± 0.0%
 match
-  10,006,580 ± 0.0%
+  10,173,318 ± 0.0%
 search
-  12,152,751 ± 0.0%
+  12,119,924 ± 0.0%
 indexof
-  23,029,848 ± 0.0%
+  23,026,196 ± 0.0%
 match-str
-  4,547,185 ± 0.0%
+  4,356,299 ± 0.0%
 search-str
-  12,479,392 ± 0.0%
+  12,639,951 ± 0.0%
 
-Elapsed time: 21513ms (21s 513ms)
+Elapsed time: 21178ms (21s 178ms)
 */
