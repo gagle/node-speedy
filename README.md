@@ -112,6 +112,8 @@ Emitted for each test. The callback receives an object with the following proper
 
 This event is emitted before the `end` event.
 
+---
+
 <a name="run"></a>
 ___module_.run([name][, fn][, options]) : EventEmitter__
 
