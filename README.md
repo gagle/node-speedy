@@ -5,7 +5,7 @@ _Node.js project_
 
 #### Tiny benchmark utility ####
 
-Version: 0.1.0
+Version: 0.1.1
 
 If you need to benchmark some sort of code or if you are writing a module and want to see how well it performs in comparison with older versions, you can use `speedy`. Use it for rapid prototyping and informal benchmarks. Don't use it for serious jobs like benchmarking HTTP servers.
 

@@ -1,6 +1,6 @@
 {
 	"name": "speedy",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Tiny benchmark utility",
 	"keywords": ["benchmark", "speed"],
 	"author": "Gabriel Llamas <gagle@outlook.com>",
