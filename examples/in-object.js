@@ -2,6 +2,11 @@
 
 var speedy = require ("../lib");
 
+/*
+The following functions check if an object has a property but they are quite
+different.
+*/
+
 var o = {};
 
 speedy.run ({
