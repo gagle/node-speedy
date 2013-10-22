@@ -28,11 +28,11 @@ speedy.run ({
 });
 
 /*
-File: switch.js
+File: switch-string.js
 
-Node v0.10.20
+Node v0.10.21
 V8 v3.14.5.9
-Speedy v0.1.0
+Speedy v0.1.1
 
 Tests: 2
 Timeout: 1000ms (1s 0ms)
@@ -43,9 +43,9 @@ Total time: ~6000ms (6s 0ms)
 Higher is better (ops/sec)
 
 switch
-  53,798,560 ± 0.0%
+  53,770,870 ± 0.0%
 if-else
-  139,462,849 ± 0.1%
+  139,520,089 ± 0.1%
 
-Elapsed time: 6054ms (6s 54ms)
+Elapsed time: 6052ms (6s 52ms)
 */
