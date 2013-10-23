@@ -10,9 +10,9 @@ speedy.run ({
 		+"1.1";
 	},
 	"~~": function (){
-		//It's the same as "+" but it also crops the decimal part, so if you need
-		//to sanitize a number, instead of doing "parseInt + decimal removal", it's
-		//faster using the tildes "~~"
+		//It's the same as "+" but it also crops the decimal part and returns a 0 if
+		//it's not a numeric string, so if you need to sanitize a number, this is
+		//the best way
 		~~"1.1";
 	},
 	parseFloat: function (){
