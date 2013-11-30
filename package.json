@@ -8,9 +8,6 @@
 	"engines": {
 		"node": ">=0.10"
 	},
-	"dependencies": {
-		"error-maker": "*"
-	},
 	"license": "MIT",
 	"main": "lib"
 }
