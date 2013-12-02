@@ -1,11 +1,11 @@
 speedy
 ======
 
-_Node.js project_
-
 #### Tiny benchmark utility ####
 
 [![NPM version](https://badge.fury.io/js/speedy.png)](http://badge.fury.io/js/speedy "Fury Version Badge")
+
+[![NPM installation](https://nodei.co/npm/speedy.png?mini=true)](https://nodei.co/npm/speedy "NodeICO Badge")
 
 If you need to benchmark some sort of code or if you are writing a module and want to see how well it performs in comparison with older versions, you can use `speedy`. Use it for rapid prototyping and informal benchmarks. Don't use it for serious jobs like benchmarking HTTP servers.
 
@@ -34,12 +34,6 @@ async (function (){
 ```
 
 This worked for me and produces consistent benchmark results. But it has a problem. Cannot execute codes that make an excessive use of nextTick in a recursive way because the `process.maxTickDepth` limit can be reached. In Node.js v0.12 this limit will be removed.
-
-#### Installation ####
-
-```
-npm install speedy
-```
 
 #### Objects ####
 
