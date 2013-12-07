@@ -7,16 +7,16 @@ var s = "string";
 //1 closure lookup and 1 variable definition per test
 
 speedy.run ({
-	cache: function (){
-		var type = typeof s;
-		type === "number";
-		type === "string";
-	},
-	"no-cache": function (){
-		var str = s;
-		typeof str === "number";
-		typeof str === "string";
-	}
+  cache: function (){
+    var type = typeof s;
+    type === "number";
+    type === "string";
+  },
+  "no-cache": function (){
+    var str = s;
+    typeof str === "number";
+    typeof str === "string";
+  }
 });
 
 /*
