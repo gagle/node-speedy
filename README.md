@@ -29,7 +29,7 @@ var async = (function (){
 })();
 
 async (function (){
-  //Asynchronous code
+  //Code
 });
 ```
 
