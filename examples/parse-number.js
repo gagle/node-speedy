@@ -15,6 +15,10 @@ speedy.run ({
     //the best way
     ~~"1.1";
   },
+  "|": function (){
+    //Same as ~~
+    "1.1"|0;
+  },
   parseInt: function (){
     //It's not the same as Number but shares some similarities
     parseInt ("1.1");
@@ -31,30 +35,32 @@ speedy.run ({
 /*
 File: parse-number.js
 
-Node v0.10.22
+Node v0.10.24
 V8 v3.14.5.9
 Speedy v0.1.1
 
-Tests: 6
+Tests: 7
 Timeout: 1000ms (1s 0ms)
 Samples: 3
 Total time per test: ~3000ms (3s 0ms)
-Total time: ~18000ms (18s 0ms)
+Total time: ~21000ms (21s 0ms)
 
 Higher is better (ops/sec)
 
 Number
-  13,078,691 ± 0.0%
+  12,891,656 ± 0.1%
 +
-  10,973,905 ± 0.0%
+  10,929,749 ± 0.0%
 ~~
-  11,283,532 ± 0.1%
+  11,250,825 ± 0.1%
+|
+  11,200,030 ± 0.0%
 parseInt
-  18,084,790 ± 0.0%
+  18,031,903 ± 0.0%
 parseFloat
-  16,902,449 ± 0.0%
+  16,969,334 ± 0.0%
 json
-  10,656,040 ± 0.0%
+  10,750,916 ± 0.0%
 
-Elapsed time: 18411ms (18s 411ms)
+Elapsed time: 21179ms (21s 179ms)
 */
